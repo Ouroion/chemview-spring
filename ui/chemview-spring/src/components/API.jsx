@@ -53,12 +53,13 @@ const ChemistrySearch = () => {
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
-            <h1 style={{ color: '#2c5032' }}>ChemView</h1>
+        <div style={{padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif'}}>
+            <h1 style={{color: '#309a3f'}}>ChemView</h1>
 
             {/* Element Search */}
-            <div style={{ marginBottom: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
-                <h2 style={{ color: '#3498db' }}>Periodic Table Element</h2>
+            <div style={{marginBottom: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px'}}>
+                <img id='image' src={"../public/periodic_table.png"} alt={"periodic table"}/>
+                <h2 style={{color: '#3498db'}}>Periodic Table Element</h2>
                 <form onSubmit={searchElement}>
                     <input
                         type="text"
@@ -95,7 +96,7 @@ const ChemistrySearch = () => {
                         backgroundColor: '#ecf0f1',
                         borderRadius: '4px'
                     }}>
-                        <h3 style={{ color: '#2c3e50' }}>Element Information</h3>
+                        <h3 style={{color: '#2c3e50'}}>Element Information</h3>
                         <p><strong>Name:</strong> {elementData.name}</p>
                         <p><strong>Appearance:</strong> {elementData.appearance}</p>
                         <p><strong>Electron Configuration:</strong> {elementData.electronConfiguration}</p>
@@ -104,8 +105,8 @@ const ChemistrySearch = () => {
             </div>
 
             {/* Chemical Search */}
-            <div style={{ marginBottom: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
-                <h2 style={{ color: '#e74c3c' }}>Chemical Compound (PubChem)</h2>
+            <div style={{marginBottom: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px'}}>
+                <h2 style={{color: '#e74c3c'}}>Chemical Compound (PubChem)</h2>
                 <form onSubmit={searchChemical}>
                     <input
                         type="text"
@@ -142,7 +143,7 @@ const ChemistrySearch = () => {
                         backgroundColor: '#ecf0f1',
                         borderRadius: '4px'
                     }}>
-                        <h3 style={{ color: '#2c3e50' }}>Chemical Information</h3>
+                        <h3 style={{color: '#2c3e50'}}>Chemical Information</h3>
                         <p><strong>Molecular Formula:</strong> {chemicalData.molecularFormula}</p>
                         <p><strong>Molecular Weight:</strong> {chemicalData.molecularWeight}</p>
                         <p><strong>IUPAC Name:</strong> {chemicalData.iupacName}</p>
