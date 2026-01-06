@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+p {
+  color:black;
+}
+
+#image {
+  width: 700px;
+  height: 450px;
+}
